@@ -47,7 +47,13 @@ for img in "$@"; do
     else
 	magick "$img" -resize x$image_height "$png" 2> /dev/null
     fi
-    
-    mv "$png" $destdir
+
+    if [[ -f $destdir/$png ]]; then
+	echo "warning: skipping '$png': destination file already exists"
+	continue
+    else
+	mv "$png" $destdir
+    fi
+
     rm -f "$img"
 done

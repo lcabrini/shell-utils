@@ -5,7 +5,7 @@
 # The following steps are performed:
 #   1. Resize image so that the height is $image_height (default: 400 pixels)
 #   2. Convert image to PNG
-#   3. Move converted image to ~/Pictures/Anki
+#   3. Move converted image to images directory
 #
 # Requirements:
 #   ImageMagick

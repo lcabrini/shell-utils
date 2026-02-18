@@ -13,7 +13,7 @@
 # Author: Lorenzo Cabrini <lorenzo.cabrini@gmail.com>
 
 image_height=400
-destdir=~/Pictures/Anki
+destdir=~/Immagini/Anki
 
 if [[ $# -eq 0 ]]; then
     echo "No images supplied."

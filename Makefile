@@ -13,8 +13,8 @@ pre-build:
 	go mod tidy
 
 .PHONY: install
-insall:
-	for app in $(APP); do \
+install:
+	for app in $(APPS); do \
 		go install ./cmd/$$app; \
 	done
 
